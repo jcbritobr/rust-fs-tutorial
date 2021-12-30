@@ -1,6 +1,5 @@
 use std::{
     fs::{self, DirBuilder},
-    os::unix::fs as fsunix,
     path::{Path, PathBuf},
 };
 
