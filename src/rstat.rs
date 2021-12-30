@@ -19,7 +19,6 @@ struct Opt {
     mode: String,
 }
 
-
 fn main() -> Result<(), StatsError> {
     let opt = Opt::from_args();
     let mode = &opt.mode[..];

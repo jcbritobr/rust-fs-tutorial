@@ -17,5 +17,9 @@ path = "src/dir.rs"
 name = "rstat"
 path = "src/rstat.rs"
 
+[[bin]]
+name = "link_examples"
+path = "src/link.rs"
+
 [dependencies]
 structopt = "*"
