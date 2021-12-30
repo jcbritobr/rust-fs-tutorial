@@ -14,7 +14,8 @@ name = "dir_examples"
 path = "src/dir.rs"
 
 [[bin]]
-name = "rstat_tool"
+name = "rstat"
 path = "src/rstat.rs"
 
 [dependencies]
+structopt = "*"
