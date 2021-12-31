@@ -24,4 +24,34 @@ The same system calls used to open, read, write and close regular files can also
 
 * **File Descriptors**
 
-A file descriptor is a handle to a file. Opening a file returns a descriptor, and other operations such as reading, writing and closing use the file descriptor.
+A file descriptor is a handle to a file. Opening a file returns a descriptor, and other operations such as reading, writing and closing use the file descriptor. File operations are performed by processes. A process perform this operations by invoking system calls on the kernel. Eche process has a limit on the number of files it can open.
+
+* Examples
+
+1. [File Operations](src/files.rs)
+2. [Directory Operations](src/dir.rs)
+3. [Link Operations](src/link.rs)
+4. [The rstat tool](src/rstat.rs)
+
+* Test rstat tool
+```
+$ cargo test
+```
+
+* Build rstat tool
+
+The rstat is a tool that extracts information about rust source code. It uses all APIs from all examples.
+```
+$ cargo build --bin rstat
+```
+
+* Run rstat
+```
+$ cargo run --bin rstat -- -m src src
+$ Summary stats: SrcStats { number_of_files: 6, number_of_lines: 323, loc: 277, comments: 3, blanks: 43 }
+```
+
+* Build all examples and tools
+```
+$ cargo build
+```
