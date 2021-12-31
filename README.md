@@ -57,6 +57,6 @@ $ cargo build
 ```
 
 ## References
-***
+
 1. [System calls](https://en.wikipedia.org/wiki/System_call)
 2. [Practical System Programming for Rust Developers](https://www.amazon.com.br/Practical-System-Programming-Rust-Developers-ebook/dp/B08MBCQ5L1)
