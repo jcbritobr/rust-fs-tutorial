@@ -16,7 +16,10 @@ This tutorial shows the basics of how files are managed by Unix/Linux systems, a
 All resources above are files.
 
 * **System Calls**
+
+Is aprogrammatic way in which a computer program requests a service from the kernel of the operation system on which it is executed.
 The same system calls used to open, read, write and close regular files can also be used in any other type of files such as block devices, links.
 
 * **File Descriptors**
+
 A file descriptor is a handle to a file. Opening a file returns a descriptor, and other operations such as reading, writing and closing use the file descriptor.
