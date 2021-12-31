@@ -9,9 +9,11 @@ const FILE: &str = "sample.txt";
 fn main() {
     {
         println!("Creating file...");
+        // Creates a simple file
         let _file = File::create(FILE).unwrap();
     }
 
+    // Query file information
     let file_metadata = fs::metadata(FILE).unwrap();
     println!(
         "len: {}, last acessed: {:?}, modified {:?}, created {:?}",
@@ -28,7 +30,7 @@ fn main() {
     );
 
     println!(
-        "Permissions  of file are: {:?}",
+        "Permissions of file are: {:?}",
         file_metadata.permissions()
     );
 
