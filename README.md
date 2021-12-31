@@ -11,7 +11,7 @@ This tutorial shows the basics of how files are managed by Unix/Linux systems, a
 4. Character device files - A terminal, a keyboard, a printer, a sound card.
 5. Named pipes - In-memory inter-process communication machanism.
 6. Unix domain sockets - Is a form of inter-process communication.
-7. Links - Hard links and symbolic.
+7. Links - Hard links and symbolic links.
 
 All resources above are files.
 
